@@ -60,9 +60,9 @@ namespace SecurePassword_MD5
                         string decrypted = UTF8Encoding.UTF8.GetString(results);
                         if (decrypted == txtValidation.Text)
                         {
-                            lblResults.Vesible == true;
+                            lblResults.Vesible = true;
                             lblResults.ForeColor = Color.Green;
-                            lblResults.Txt = "Valid Password Detected!";
+                            lblResults.Text = "Valid Password Detected!";
 							/* Bug End */
                         }
                         else
@@ -77,8 +77,8 @@ namespace SecurePassword_MD5
                 }
             }
             else {
-                lblResults.Visible == true;
-                lblResults.ForeColor = Colur.Red;
+                lblResults.Visible = true;
+                lblResults.ForeColor = Color.Red;
                 lblResults.Text = "CAUTION! Enter a Password for the Validation!";
             }
         }
