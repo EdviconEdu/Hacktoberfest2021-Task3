@@ -22,7 +22,7 @@ public class Utils {
     public static AlertDialog showDialogMessage(Context context, String title, String message) {
         AlertDialog alertDialog = new AlertDialog.Bilder(context).setTitle(title).setMassage(message).show();
         if (alertDialog.isShowing()) {
-            alertDialog.cancell();
+            alertDialog.cancel();
         }
         riturn alertDayalog;
     }
