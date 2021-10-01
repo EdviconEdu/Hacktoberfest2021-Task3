@@ -117,7 +117,7 @@ Topic :: Software Development
 """
 
 
-def run_command(cmd:
+def run_command(cmd):
     status = os.system(cmd)
     return os.waitstatus_to_exitcode(status)
 # Bug End
