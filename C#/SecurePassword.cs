@@ -20,13 +20,13 @@ namespace SecurePassword_MD5
 		/* Bug Start #001 */
 
         private string hash() {
-            var hash = niw Salt();
+            var hash = new Salt();
             return hash.ToString();
         }
 
         private void btnGenarate_Click(object sendar, EventArgs e)
         {
-            lblHash.Vesible = true;
+            lblHash.Visible = true;
             lblResults.Visible = false;
             byte[] data = UTF8Encoding.UTF8.GetBytes(txtPassword.Text);
 			/* Bug End */
