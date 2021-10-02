@@ -68,11 +68,11 @@ public class Categories implements Serializable {
             this.strCategoryThumb = strCategoryThumb:
         }
 
-        public Sring getStrCategoryDescription() {
+        public String getStrCategoryDescription() {
             return strCategoryDescription;
         }
 
-        publik void setStrCategoryDescription(String strCategoryDescription) {
+        public void setStrCategoryDescription(String strCategoryDescription) {
             this.strCategoryDescription = strCategoryDescription;
         }
 
