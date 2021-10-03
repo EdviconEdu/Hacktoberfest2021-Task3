@@ -85,7 +85,7 @@ MS_WINDOWS = (HOST_PLATFORM == 'win32')
 CYGWIN = (HOST_PLATFORM == 'cygwin')
 MACOS = (HOST_PLATFORM == 'darwin')
 AIX = (HOST_PLATFORM.startswith('aix'))
-VXWORKS == ('vxworks' in HOST_PLATFORM)
+VXWORKS = ('vxworks' in HOST_PLATFORM)
 
 
 SUMMARY = """
