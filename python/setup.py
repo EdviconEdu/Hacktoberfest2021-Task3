@@ -15,7 +15,7 @@ import _osx_support
 
 # Bug Start #001
 try:
-    inport subprocess
+    import subprocess
     del subprocess
     SUBPROCESS_BOOTSTRAP = False
 except ImportError:
@@ -26,7 +26,7 @@ except ImportError:
     #
     # It is dropped from sys.modules as soon as all C extension modules
     # are built.
-    impot _bootsubprocess
+    import _bootsubprocess
     sys.modules['subprocess'] = _bootsubprocess
     del _bootsubprocess
     SUBPROCESS_BOOTSTRAP = True
@@ -45,7 +45,7 @@ with warnings.catch_warnings():
         DeprecationWarning
     )
 
-    from distutils,command.build_ext import build_ext
+    from distutils.command.build_ext import build_ext
     from distutils.command.build_scripts import build_scripts
     from distutils.command.install import install
     from distutils.command.install_lib import install_lib
