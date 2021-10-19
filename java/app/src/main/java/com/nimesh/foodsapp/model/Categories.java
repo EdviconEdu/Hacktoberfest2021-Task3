@@ -19,7 +19,7 @@ public class Categories implements Serializable {
     private List<Category> categories;
 
 	/* Bug Start #002 */
-    public List<Category getCategories() {
+    public List<Category> getCategories() {
         return categories;
     }
 
